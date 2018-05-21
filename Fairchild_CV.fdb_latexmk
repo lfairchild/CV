@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Fairchild_CV"] 1524599969 "Fairchild_CV.aux" "Fairchild_CV.bbl" "Fairchild_CV" 1524599969
+["bibtex Fairchild_CV"] 1526921796 "Fairchild_CV.aux" "Fairchild_CV.bbl" "Fairchild_CV" 1526921830
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "Fairchild_CV.aux" 1524599936 1461 07aa7077033861b21b5b3293bd0a952a ""
+  "Fairchild_CV.aux" 1526921794 1461 253ed9cf8ad1b9a60941dff815b5d213 ""
   "publications.bib" 0 -1 0 ""
   (generated)
-  "Fairchild_CV.bbl"
   "Fairchild_CV.blg"
-["pdflatex"] 1524599936 "Fairchild_CV.tex" "Fairchild_CV.pdf" "Fairchild_CV" 1524599969
+  "Fairchild_CV.bbl"
+["pdflatex"] 1526921794 "Fairchild_CV.tex" "Fairchild_CV.pdf" "Fairchild_CV" 1526921830
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1480098667 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1480098668 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1480098668 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -133,12 +133,12 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "Fairchild_CV.aux" 1524599936 1461 07aa7077033861b21b5b3293bd0a952a ""
+  "Fairchild_CV.aux" 1526921794 1461 253ed9cf8ad1b9a60941dff815b5d213 ""
   "Fairchild_CV.bbl" 0 -1 0 "bibtex Fairchild_CV"
-  "Fairchild_CV.out" 1524599936 1077 5535877f8f2b0df91dee5bc17e4949ab ""
-  "Fairchild_CV.tex" 1524599936 17227 ec9e0b9e6d764ab3191860c385386c87 ""
+  "Fairchild_CV.out" 1526921794 1077 5535877f8f2b0df91dee5bc17e4949ab ""
+  "Fairchild_CV.tex" 1526921793 17417 1b4d64fb0fc1eb916924cc60bcde4901 ""
   (generated)
-  "Fairchild_CV.aux"
-  "Fairchild_CV.out"
-  "Fairchild_CV.log"
   "Fairchild_CV.pdf"
+  "Fairchild_CV.out"
+  "Fairchild_CV.aux"
+  "Fairchild_CV.log"
