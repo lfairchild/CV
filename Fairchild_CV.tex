@@ -6,11 +6,14 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}        
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size
+% ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and
+% 'landscape') and font family ('sans' and 'roman')
 
 % modern themes
-\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{banking} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -25,16 +28,17 @@
 
 \usepackage{import}
 \usepackage{etaremune}
+\usepackage{hyperref}
 
 % personal data
 \name{Luke}{Fairchild}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
 \address{University of California, Berkeley | Department of Earth \& Planetary Science}{307 McCone Hall, Berkeley, CA 94720-4767}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{(319) 325-5048}                   % optional, remove / comment the line if not wanted
+% \phone[mobile]{(319) 325-5048}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{lfairchild@berkeley.edu}                               % optional, remove / comment the line if not wanted
-\homepage{https://lfairchild.github.io}                         % optional, remove / comment the line if not wanted
+\homepage{lfairchild.github.io}                         % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
@@ -144,103 +148,146 @@
 %\newpage
 
 \section{Publications}
-
-\begin{etaremune}
-
 \vspace{6pt}
+\begin{etaremune}[itemsep=3pt]
 
-\item{\textbf{Fairchild, L.M.} and Buffett, B.A., 2018, \textit{A stochastic coupling of geomagnetic intensity and reversal frequency}: Nature Geoscience. (in preparation)}
+    \item{\textbf{Fairchild, L.M.}, Buffett, B.A., and Biggin, A.J., 2018,
+            \textit{A stochastic coupling of geomagnetic intensity and reversal
+        frequency}: Nature Geoscience. (in preparation)}
 
-\vspace{3pt}
+    \item{Tikoo, S.M., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, and
+            Gaastra, K.M., 2018, \textit{A thermal origin for the impact-induced
+            magnetization of the Slate Islands Impact Structure}: Nature
+        Geoscience. (in preparation)}
 
-\item{Tikoo, S.M., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, and Gaastra, K.M., 2018, \textit{A thermal origin for the impact-induced magnetization of the Slate Islands Impact Structure}: Nature Geoscience. (in preparation)}
+    \item{Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, and Slotznick, S.P.,
+            2018, \textit{Primary red bed magnetization revealed by fluvial
+        intraclasts}: Geology. (in review)}
 
-\vspace{3pt}
+    \item{Swanson-Hysell, N.L., Ramezani, J., \textbf{Fairchild, L.M.}, and
+            Bowring, S.A., 2017, \textit{Failed rifting and fast drifting:
+                Midcontinent Rift
+                development, Laurentia's rapid motion and the driver of
+        Grenvillian orogenesis}: GSA Bulletin. (in review)}
 
-\item{Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, and Slotznick, S.P., 2018, \textit{Primary red bed magnetization revealed by fluvial intraclasts}: Geology. (in review)}
+    \item{Sprain, C.J., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, and
+            Gaastra, K., 2017, \textit{A field like today's? The geomagnetic
+            field 1.1 billion years ago}: Geophysical Journal International,
+            {\color{cyan}\href{https://doi.org/10.1093/gji/ggy074}
+        {doi:10.1093/gji/ggy074}}.}
 
-\vspace{3pt}
+    \item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Ramezani, J., Sprain,
+            C.J., and Bowring, S.A., 2017, \textit{The end of Midcontinent Rift
+            magmatism and the paleogeography of Laurentia}: Lithosphere,
+            {\color{cyan}\href{https://doi.org/10.1130/L580.1}
+        {doi:10.1130/L580.1}}.}
 
-\item{Swanson-Hysell, N.L., Ramezani, J., \textbf{Fairchild, L.M.}, and Bowring, S.A., 2017, \textit{Failed rifting and fast drifting: Midcontinent Rift development, Laurentia's rapid motion and the driver of Grenvillian orogenesis}: GSA Bulletin. (in review)}
+    \item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., and Tikoo, S.M., 2016,
+            \textit{A matter of minutes: Breccia dike paleomagnetism provides
+            evidence for rapid crater modification}: Geology,
+            {\color{cyan}\href{https://doi.org/10.1130/G37927.1}
+        {doi:10.1130/G37927.1}}.}
 
-\vspace{3pt}
+    \item{Bezaeva, N.S., Swanson Hysell, N.L., Tikoo, S.M., Badyukov, D.D.,
+            Kars, M., Egli, R., Chareev, D.A., \textbf{Fairchild, L.M.},
+            Khakhalova, E., Strauss, B.E., and Lindquist, A.K., 2016,
+            \textit{The effect of 10 to >160 GPa spherically convergent shock
+            waves on the magnetic properties of basalt of diabase}:
+            Geochemistry, Geophysics, Geosystems,
+            {\color{cyan}\href{https://doi.org/10.1002/2016GC006583}
+        {doi:10.1002/2016GC006583}}.}
 
-\item{Sprain, C.J., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, and Gaastra, K., 2017, \textit{A field like today's? The geomagnetic field 1.1 billion years ago}: Geophysical Journal International, doi: 10.1093/gji/ggy074.}
-
-\vspace{3pt}
-
-\item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Ramezani, J., Sprain, C.J., and Bowring, S.A., 2017, \textit{The end of Midcontinent Rift magmatism and the paleogeography of Laurentia}: Lithosphere, doi: 10.1130/L580.1.}
-
-\vspace{3pt}
-
-\item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., and Tikoo, S.M., 2016, \textit{A matter of minutes: Breccia dike paleomagnetism provides evidence for rapid crater modification}: Geology, doi: 10.1130/G37927.1.}
-
-\vspace{3pt}
-
-\item{Bezaeva, N.S., Swanson Hysell, N.L., Tikoo, S.M., Badyukov, D.D., Kars, M., Egli, R., Chareev, D.A., \textbf{Fairchild, L.M.}, Khakhalova, E., Strauss, B.E., and Lindquist, A.K., 2016, \textit{The effect of 10 to >160 GPa spherically convergent shock waves on the magnetic properties of basalt of diabase}: Geochemistry, Geophysics, Geosystems, doi: 10.1002/2016GC006583.}
-
-\vspace{3pt}
-
-\item{Tauxe, L., Shaar, R., Jonestrask, L., Swanson-Hysell, N.L., Minnett, R., Koppers, A.A.P., Constable, C.G., Jarboe, N., Gaastra,  K., \textbf{Fairchild, L.M.}, 2016, \textit{PmagPy: Software package for paleomagnetic data analysis and a bridge to the Magnetics Information Consortium (MagIC) Database}: Geochemistry, Geophysics, Geosystems, doi: 10.1002/2016GC006307.}
+    \item{Tauxe, L., Shaar, R., Jonestrask, L., Swanson-Hysell, N.L., Minnett,
+            R., Koppers, A.A.P., Constable, C.G., Jarboe, N., Gaastra,  K.,
+            \textbf{Fairchild, L.M.}, 2016, \textit{PmagPy: Software package for
+                paleomagnetic data analysis and a bridge to the Magnetics
+            Information Consortium (MagIC) Database}: Geochemistry,
+            Geophysics, Geosystems,
+            {\color{cyan}\href{https://doi.org/10.1002/2016GC006307}
+        {doi:10.1002/2016GC006307}}.}
 
 \end{etaremune}
 
 \section{Conference Abstracts}
-
-\begin{itemize}
-
 \vspace{6pt}
 
-\item{Kulakov, E.V., Smirnov, A.V., Biggin, A.J., Sprain, C.J., Hawkins, L., Patterson, G., \textbf{Fairchild, L.M.}, 2018, \textit{The long-term history of the Mesozoic-Jurassic geodynamo: A paleointensity perspective}, European Geosciences Union General Assembly, Vienna, Austria.}
+\begin{itemize}
+    \setlength{\itemsep}{2pt}
 
-\vspace{3pt}
+    \item{Kulakov, E.V., Smirnov, A.V., Biggin, A.J., Sprain, C.J., Hawkins, L.,
+            Patterson, G., \textbf{Fairchild, L.M.}, 2018, \textit{The long-term
+                history of the Mesozoic-Jurassic geodynamo: A paleointensity
+            perspective}, European Geosciences Union General Assembly, Vienna,
+        Austria.}
 
-\item{\textbf{Fairchild, L.M.}, Buffett, B., Biggin, A., 2017, \textit{Stochastic models and the absolute paleointensity (PINT) database: a new look at geomagnetic reversal rates}, 2017 Nordic Paleomagnetism Workshop, Leirubakki, Iceland.}
+    \item{\textbf{Fairchild, L.M.}, Buffett, B., Biggin, A., 2017,
+            \textit{Stochastic models and the absolute paleointensity (PINT)
+            database: a new look at geomagnetic reversal rates}, 2017 Nordic
+        Paleomagnetism Workshop, Leirubakki, Iceland.}
 
-\vspace{3pt}
+    \item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Ramenzani, J., Sprain,
+            C., Gaastra, K., Bowring, S., 2017, \textit{The end of Midcontinent
+            Rift magmatism and the paleogeography of Laurentia}, 2017 Magnetics
+        Information Consortium (MagIC) Workshop, La Jolla, California.}
 
-\item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Ramenzani, J., Sprain, C., Gaastra, K., Bowring, S., 2017, \textit{The end of Midcontinent Rift magmatism and the paleogeography of Laurentia}, 2017 Magnetics Information Consortium (MagIC) Workshop, La Jolla, California.}
+    \item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Ramenzani, J., Sprain,
+            C., Gaastra, K., Bowring, S., 2016, \textit{The end of Midcontinent
+            Rift magmatism and the paleogeography of Laurentia}, Abstract
+        283146, GSA Annual Meeting.}
 
-\vspace{3pt}
+    \item{Swanson-Hysell, N.L., Ramenzani, J., \textbf{Fairchild, L.M.}, Rose,
+            I., 2016, \textit{New geochronologic and paleomagnetic constraints
+            on Midcontinent Rift development}, Abstract 284544, GSA Annual
+        Meeting.}
 
-\item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Ramenzani, J., Sprain, C., Gaastra, K., Bowring, S., 2016, \textit{The end of Midcontinent Rift magmatism and the paleogeography of Laurentia}, Abstract 283146, GSA Annual Meeting.}
+    \item{Sprain, C.J., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, Gaastra,
+            K., 2016, \textit{The strength of the Mesoproterozoic geomagnetic
+                field: new absolute paleointensity estimates from
+                \textasciitilde 1.1 billion-year-old Midcontinent Rift
+        volcanics}, Abstract 154089, AGU Fall Meeting.}
 
-\vspace{3pt}
+    \item{Bezaeva, N.S., Swanson-Hysell, N.L., Tikoo, S.M., Kars, M., Egli, R.,
+            Badyukov, D.D., Chareev, D.A., Fairchild L.M., 2016,
+            \textit{Discrimination of Thermal versus Mechanical Effects of Shock
+                on Rock Magnetic Properties of Spherically Shocked up to
+            \textasciitilde 10--160 GPa Basalt and Diabase}, Abstract
+        GP31A-1282, AGU Fall Meeting.}
 
-\item{Swanson-Hysell, N.L., Ramenzani, J., \textbf{Fairchild, L.M.}, Rose, I., 2016, \textit{New geochronologic and paleomagnetic constraints on Midcontinent Rift development}, Abstract 284544, GSA Annual Meeting.}
+    \item{Bezaeva, N.S., Swanson-Hysell, N.L., Tikoo, S.M., Kars, M., Egli, R.,
+            Badyukov, D.D., Chareev, D.A., \textbf{Fairchild, L.M.}, 2016,
+            \textit{How to discriminate between thermal and mechanical effects
+                of shock on the rock magnetic properties of basalt and diabase
+            spherically shocked up to \textasciitilde 10--160 GPa.} Book of
+            Abstracts of the 11th International Conference and School ``Problems
+            of Geocosmos", October 3--7, 2016, St Petersburg, Petrodvorets,
+        Russia, 126--127.}
 
-\vspace{3pt}
+    \item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Ramenzani, J., Sprain,
+            C., Gaastra, K., Bowring, S., 2015, \textit{When did Midcontinent
+            Rift volcanism end and where was Laurentia at that time?} Abstract
+        GP31A-1364, AGU Fall Meeting.}
 
-\item{Sprain, C.J., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, Gaastra, K., 2016, \textit{The strength of the Mesoproterozoic geomagnetic field: new absolute paleointensity estimates from $\sim$1.1 billion-year-old Midcontinent Rift volcanics}, Abstract 154089, AGU Fall Meeting.}
+    \item{Bezaeva, N.S., Swanson-Hysell, N.L., Tikoo, S.M., Badyukov, D., Kars,
+            M., Egli, R., Chareev, D., \textbf{Fairchild, L.M.}, Khakhalova, E.,
+            Strauss, B., and Lindquist, A., 2015, \textit{Rock magnetic effects
+                induced in terrestrial basalt and diabase by >20 GPa
+            experimental spherical shock waves.} Abstract GP43A-1233, AGU
+        Fall Meeting.}
 
-\vspace{3pt}
+    \item{Tikoo, S.M., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, Renne,
+            P.R., and Schuster, D.L., 2015, \textit{Origins of impact-related
+            magnetization at the Slate Islands impact structure, Canada.}
+        Abstract 2474, 46th Lunar and Planetary Science Conference.}
 
-\item{Bezaeva, N.S., Swanson-Hysell, N.L., Tikoo, S.M., Kars, M., Egli, R., Badyukov, D.D., Chareev, D.A., Fairchild L.M., 2016, \textit{Discrimination of Thermal versus Mechanical Effects of Shock on Rock Magnetic Properties of Spherically Shocked up to $\sim$10--160 GPa Basalt and Diabase}, Abstract GP31A-1282, AGU Fall Meeting.}
+    \item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Tikoo, S.M., 2014,
+            \textit{High temperature emplacement of clastic breccia dikes and
+                implications for the development and magnetization of impact
+        craters.} Abstract 19163, AGU Fall Meeting.}
 
-\vspace{3pt}
-
-\item{Bezaeva, N.S., Swanson-Hysell, N.L., Tikoo, S.M., Kars, M., Egli, R., Badyukov, D.D., Chareev, D.A., \textbf{Fairchild, L.M.}, 2016, \textit{How to discriminate between thermal and mechanical effects of shock on the rock magnetic properties of basalt and diabase spherically shocked up to $\sim$10--160 GPa.} Book of Abstracts of the 11th International Conference and School ``Problems of Geocosmos", October 3--7, 2016, St Petersburg, Petrodvorets, Russia, 126--127.}
-
-\vspace{3pt}
-
-\item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Ramenzani, J., Sprain, C., Gaastra, K., Bowring, S., 2015, \textit{When did Midcontinent Rift volcanism end and where was Laurentia at that time?} Abstract GP31A-1364, AGU Fall Meeting.}
-
-
-\vspace{3pt}
-
-\item{Bezaeva, N.S., Swanson-Hysell, N.L., Tikoo, S.M., Badyukov, D., Kars, M., Egli, R., Chareev, D., \textbf{Fairchild, L.M.}, Khakhalova, E., Strauss, B., and Lindquist, A., 2015, \textit{Rock magnetic effects induced in terrestrial basalt and diabase by >20 GPa experimental spherical shock waves.} Abstract GP43A-1233, AGU Fall Meeting.}
-
-\vspace{3pt}
-
-\item{Tikoo, S.M., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, Renne, P.R., and Schuster, D.L., 2015, \textit{Origins of impact-related magnetization at the Slate Islands impact structure, Canada.} Abstract 2474, 46th Lunar and Planetary Science Conference.}
-
-\vspace{3pt}
-
-\item{\textbf{Fairchild, L.M.}, Swanson-Hysell, N.L., Tikoo, S.M., 2014, \textit{High temperature emplacement of clastic breccia dikes and implications for the development and magnetization of impact craters.} Abstract 19163, AGU Fall Meeting.}
-
-\vspace{3pt}
-
-\item{Tikoo, S.M., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, Renne, P.R., and Schuster, D.L., 2014, \textit{Testing the shock remanent magnetization hypothesis at the Slate Islands impact structure, Canada.} Abstract 23778, AGU Fall Meeting.}
+    \item{Tikoo, S.M., Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, Renne,
+            P.R., and Schuster, D.L., 2014, \textit{Testing the shock remanent
+                magnetization hypothesis at the Slate Islands impact structure,
+        Canada.} Abstract 23778, AGU Fall Meeting.}
 
 \end{itemize}
 
@@ -261,22 +308,27 @@
 
 \begin{itemize}
 
-%\item \textbf{Laboratory:} 2G Superconducting Quantum Interference Device (SQuID) magnetometer; Kappabridge Magnetic Susceptibility/Anisotropy System; X-ray diffractometer; gravimeter; scanning electron microscope; petrographic analysis.
-%
-%\vspace{6pt}
+    % \item \textbf{Laboratory:} 2G Superconducting Quantum Interference Device
+    %     (SQuID) magnetometer; Kappabridge Magnetic Susceptibility/Anisotropy
+    %     System; X-ray diffractometer; gravimeter; scanning electron microscope;
+    %     petrographic analysis.
+    
+    % \vspace{6pt}
 
-\item \textbf{Programming Languages:} Proficient in Python, LaTeX, Jupyter
-    notebooks, HTML; some experience with  Matlab, Javascript, C, C{++},
-    frontend web development (Jekyll and GitHub pages)
+    \item \textbf{Programming and Markup Languages:} Proficient in Python,
+        {\fontfamily{cmr}\selectfont\LaTeX}, Jupyter notebooks, HTML; some
+        experience with  Matlab, Javascript, C, C{++}, frontend web development
+        (Jekyll and GitHub pages)
 
-\vspace{6pt}
+    \vspace{6pt}
 
-\item \textbf{Industry Software Skills:} GIS, git version control software,
-    GitHub, Adobe Illustrator, Adobe Photoshop, MS Office products
+    \item \textbf{Industry Software Skills:} GIS, git version control software,
+        GitHub, Adobe Illustrator, Adobe Photoshop, MS Office products
 
-\vspace{6pt}
+    \vspace{6pt}
 
-\item \textbf{Field Skills:} Geologic mapping, rock core drilling/orienting, structural analysis
+    \item \textbf{Field Skills:} Geologic mapping, rock core drilling/orienting,
+        structural analysis
 
 \end{itemize}
 

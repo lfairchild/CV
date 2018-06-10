@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/bf8aa43/
+Awards	Fairchild_CV.tex	/^\\section{Awards}$/;"	s
+CV	README.md	/^# CV$/;"	c
+Conference Abstracts	Fairchild_CV.tex	/^\\section{Conference Abstracts}$/;"	s
+Education	Fairchild_CV.tex	/^\\section{Education}$/;"	s
+Experience	Fairchild_CV.tex	/^\\section{Experience}$/;"	s
+Field Work	Fairchild_CV.tex	/^\\subsection{Field Work}$/;"	u	section:Experience
+Memberships	Fairchild_CV.tex	/^\\section{Memberships}$/;"	s
+Other	Fairchild_CV.tex	/^\\subsection{Other}$/;"	u	section:Experience
+Publications	Fairchild_CV.tex	/^\\section{Publications}$/;"	s
+Teaching	Fairchild_CV.tex	/^\\subsection{Teaching}$/;"	u	section:Experience
+Technical and Personal skills	Fairchild_CV.tex	/^\\section{Technical and Personal skills}$/;"	s
