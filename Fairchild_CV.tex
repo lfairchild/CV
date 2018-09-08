@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        
+\documentclass[10pt,a4paper,sans]{moderncv}        
 % possible options include font size ('10pt', '11pt' and '12pt'), paper size
 % ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and
 % 'landscape') and font family ('sans' and 'roman')
@@ -24,22 +24,40 @@
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+% \setlength{\makecvtitlenamewidth}{30cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \usepackage{import}
 \usepackage{etaremune}
 \usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[demo]{graphicx}
+\usepackage{adjustbox}
+\usepackage{multicol}
+\usepackage{fontawesome}
+\usepackage{xspace}
+\usepackage{anyfontsize}
+
+% align indentation of wrapped lines
+\def\D{\par\noindent\makebox[1em][l]{-- }\hangindent1em}
 
 % personal data
 \name{Luke}{Fairchild}
+% \title{{\fontsize{20}{24}\selectfont Curriculum Vitae}}                               % optional, remove / comment the line if not wanted
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
 \address{University of California, Berkeley | Department of Earth \& Planetary Science}{307 McCone Hall, Berkeley, CA 94720-4767}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-% \phone[mobile]{(319) 325-5048}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{(319) 325-5048}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{lfairchild@berkeley.edu}                               % optional, remove / comment the line if not wanted
 \homepage{lfairchild.github.io}                         % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\extrainfo{%
+\raisebox{-1pt}{\large\faGithub{}}
+\href{https://github.com/lfairchild}{\textsl{\small github.com/lfairchild}}
+\quad
+\raisebox{0pt}{\faLinkedin{}}
+\href{https://www.linkedin.com/in/lukefairchild765}{\textsl{\small linkedin.com/in/lukefairchild765}}
+}
+% optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
@@ -63,80 +81,77 @@
 %\small{I am a PhD student in Earth and Planetary Science. Most generally, my research is focused on using the rock record to resolve the evolution of our planet, the continents, and the geomagnetic field over time scales of tens to hundreds of millions of years. I am particularly interested in the Meso- and Neoproterozoic Eras of Earth history (from 1600 to $\sim$540 million years ago). My work has sought to integrate paleomagnetism, geochronology, stratigraphy, and numerical models 
 %
 %important events and geodynamic cycles that have set the trajectory of Earth history and large-scale changes in the configuration of continents,  Earth history through the integration of paleomagnetism, geochronology. Most research projects conducted out of the Swanson-Hysell Group (\color{blue}{\href{http://www.swanson-hysell.org}{swanson-hysell.org}}).}
-\vspace{-10pt}
+\vspace{-20pt}
 \section{Education}
 
-\vspace{10pt}
-
 \begin{itemize}
+    \item{\cventry{2015--present}{Master of Science, Earth and Planetary
+        Science}{University of California, Berkeley}{Berkeley, CA}{}{%
+        \textbf{Thesis}\quad The end of Midcontinent Rift magmatism and the
+paleogeography of Laurentia}}
 
-\item{\cventry{2015--present}{Master of Science, Earth and Planetary
-    Science}{University of California, Berkeley}{Berkeley, CA}{}{Thesis:
-\textit{The end of Midcontinent Rift magmatism and the paleogeography of
-Laurentia}}\vspace{5pt}
-
-\item{\cventry{2011--2015}{Bachelor of Arts, Geology (Honors)}{Carleton College}{Northfield,
-    MN}{\textit{cum laude}}{Thesis: \textit{High temperature emplacement of clastic breccia dikes and implications for the development and magnetization of impact craters}}}  % arguments 3 to 6 can be left empty
-
-%\item{\cventry{2002--2009}{11 GCSEs}{Southlands High School}{Chorley}{\textit{A* to B Including Maths and English}}{}}
-
+    \item{\cventry{2011--2015}{Bachelor of Arts, Geology (Honors)}{Carleton
+                College}{Northfield, MN}{\textit{cum laude}}{%
+        \textbf{Thesis}\quad High temperature emplacement of clastic breccia dikes
+    and implications for the development and magnetization of impact craters}%
+         }  % arguments 3 to 6 can be left empty
 \end{itemize}
-
-\vspace{2pt}
 
 \section{Experience}
 
-\vspace{6pt}
-
 \subsection{Teaching}
 
-\vspace{5pt}
+\begin{itemize}[itemsep=-5pt]
+    \item{\cventry{Spring 2018}{\small{EPS 115: Stratigraphy and Earth
+                History}}{Teaching Assistant}{University of California,
+        Berkeley}{Prof.\ Nicholas Swanson-Hysell}{}}
 
-\begin{itemize}
+    \item{\cventry{Fall 2017}{EPS 50: The Planet Earth}{Graduate Student
+        Instructor}{University of California, Berkeley}{Prof.\ Michael Manga}{}}
 
-\item{\cventry{Spring 2018}{\footnotesize{EPS 115: Stratigraphy and Earth History}}{Teaching Assistant}{University of California, Berkeley}{Prof. Nicholas Swanson-Hysell}{}}
-
-\item{\cventry{Fall 2017}{EPS 50: The Planet Earth}{Graduate Student Instructor}{University of California, Berkeley}{Prof. Michael Manga}{}}
-
-\item{\cventry{Spring 2015}{Petrology}{Teaching Assistant}{Carleton College}{Prof. Cameron Davidson}{}}
-
-
+    \item{\cventry{Spring 2015}{Petrology}{Teaching Assistant}{Carleton
+        College}{Prof.\ Cameron Davidson}{}}
 \end{itemize}
-\vspace{6pt}
-
 
 \subsection{Field Work}
 
-\vspace{5pt}
+\begin{itemize}[itemsep=-5pt]
+    \item{\cventry{2017}{4 weeks}{Zavkhan Basin}{Mongolia}{}{}}
 
-\begin{itemize}
+    \item{\cventry{2014, 2015, 2016 \&\ 2017}{14 weeks}{Midcontinent Rift}{Upper
+        Midwestern U.S.A. \&\ Ontario, Canada}{}{}}
 
-\item{\cventry{2017}{4 weeks}{Zavkhan Basin}{Mongolia}{}{}}
+    \item{\cventry{2013, 2014 \&\ 2015}{5 weeks}{Slate Islands Impact
+        Structure}{Ontario, Canada}{}{}}
 
-\item{\cventry{2014, 2015, 2016 \&\ 2017}{14 weeks}{Midcontinent Rift}{Upper Midwestern U.S.A. \&\ Ontario, Canada}{}{}}
+    \item{\cventry{2013}{10 weeks}{Carleton Geology Field Camp}{New
+        Zealand}{}{}}
 
-\item{\cventry{2013, 2014 \&\ 2015}{5 weeks}{Slate Islands Impact Structure}{Ontario, Canada}{}{}}
-
-\item{\cventry{2013}{10 weeks}{Carleton Geology Field Camp}{New Zealand}{}{}}
-
-\item{\cventry{2013}{5 weeks}{Cannon River Watershed}{Rice County, Minnesota}{}{}}
-
+    \item{\cventry{2013}{5 weeks}{Cannon River Watershed}{Rice County,
+        Minnesota}{}{}}
 \end{itemize}
 
 \subsection{Other}
 
-\vspace{5pt}
-
-\begin{itemize}
-
-\item{\cventry{2017--present}{Swanson-Hysell Group}{Laboratory Safety Coordinator}{University of California, Berkeley}{Dept. of Earth and Planetary Science}{}}
-
+\begin{itemize}[itemsep=-5pt]
+    \item{\cventry{2017--present}{Swanson-Hysell Group}{Laboratory Safety
+                Coordinator}{University of California, Berkeley}{Dept.\ of Earth
+        and Planetary Science}{}}
 \end{itemize}
 
-%\newpage
+\section{Awards}
+
+\cventry{}{Geological Society of America}{GSA Graduate Student Research Grant}{2017}{}{Paleomagnetism of the Freda Sandstone}\\
+
+\cventry{}{Earthscope AGeS Program}{EarthScope Award for Geochronology Student Research}{2016}{}{Constraining rapid paleogeographic change in the Mesoproterozoic as recorded by the North American Midcontinent Rift}\\
+
+\cventry{}{University of California, Graduate Division}{Chancellor's Fellowship}{2015}{}{}\\
+
+\cventry{}{Carleton College}{Class of 1963 Fellowship}{2014}{}{}\\
+
+\cventry{}{Carleton College}{Kolenkow-Reitz Fellowship}{2013}{}{}\\
 
 \section{Publications}
-\vspace{6pt}
 \begin{etaremune}[itemsep=3pt]
 
     \item \textbf{Fairchild, L.M.}, Buffett, B.A., and Biggin, A.J., 2018,
@@ -195,10 +210,14 @@ Laurentia}}\vspace{5pt}
 \end{etaremune}
 
 \section{Conference Abstracts}
-\vspace{6pt}
 
 \begin{itemize}
     \setlength{\itemsep}{2pt}
+
+    \item{Swanson-Hysell, N.L., \textbf{Fairchild, L.M.}, Ramenzani, J., 2018,
+            \textit{Chronostratigraphy of Midcontinent Rift volcanics provides
+            new insight on rift development and the rate of rapid
+        paleogeographic change}, Abstract 323067, GSA Annual Meeting.}
 
     \item{Kulakov, E.V., Smirnov, A.V., Biggin, A.J., Sprain, C.J., Hawkins, L.,
             Patterson, G., \textbf{Fairchild, L.M.}, 2018, \textit{The long-term
@@ -277,36 +296,22 @@ Laurentia}}\vspace{5pt}
 
 \end{itemize}
 
-\section{Awards}
-
-\cventry{}{Geological Society of America}{GSA Graduate Student Research Grant}{2017}{}{Paleomagnetism of the Freda Sandstone}\\
-
-\cventry{}{Earthscope AGeS Program}{EarthScope Award for Geochronology Student Research}{2016}{}{Constraining rapid paleogeographic change in the Mesoproterozoic as recorded by the North American Midcontinent Rift}\\
-
-\cventry{}{University of California, Graduate Division}{Chancellor's Fellowship}{2015}{}{}\\
-
-\cventry{}{Carleton College}{Class of 1963 Fellowship}{2014}{}{}\\
-
-\cventry{}{Carleton College}{Kolenkow-Reitz Fellowship}{2013}{}{}\\
-
-\newpage
 
 \section{Memberships}
 
 \cventry{}{Supercontinent Cycles \& Global Geodynamics}{International Geoscience Programme (IGCP) 648}{2015}{}{}
 
 \cventry{}{}{Geological Society of America}{since 2016}{}{}
-
+\vspace{-10pt}
 \cventry{}{}{American Geophysical Union}{since 2013}{}{}
-
+\vspace{-10pt}
 \cventry{}{}{Sigma Xi Research Society}{since 2015}{}{}
+\vspace{-15pt}
 
+\section{Technical and Personal Skills}
 
-\section{Technical and Personal skills}
+% \vspace{6pt}
 
-\vspace{6pt}
-
-\begin{itemize}
 
     % \item \textbf{Laboratory:} 2G Superconducting Quantum Interference Device
     %     (SQuID) magnetometer; Kappabridge Magnetic Susceptibility/Anisotropy
@@ -314,69 +319,112 @@ Laurentia}}\vspace{5pt}
     %     petrographic analysis.
     
     % \vspace{6pt}
+\subsection{Programming Languages}
+\vspace{5pt}
+\begin{itemize}[itemsep=0pt]
+    \item {\begin{minipage}[t]{\linewidth}
+                \raggedright
+                \adjustbox{valign=t}{%
+                    \includegraphics[width=.12\textwidth]{media/python-logo-vector.pdf}%
+                }
+        \end{minipage}}
+        \raggedright
+        \subitem Proficient with a variety of scientific computing and
+        data analysis tools written in Python. Experience with software development, including the
+        development of graphical user interface (GUI) applications with
+        wxPython/Phoenix. Active contributor to PmagPy
+        ({\color{cyan}\href{https://github.com/PmagPy}{github.com/PmagPy}}), an
+        open-source software package widely used within the geomagnetism and
+        paleomagnetism research communities that also provides the core data
+        analysis and visualization tools underlying the Magnetics Information
+        Consotium (MagIC) database, an online archive of paleomagnetic data
+        ({\color{cyan}\href{https://www2.earthref.org/MagIC}{earthref.org/MagIC}}).
+        An overview of the PmagPy project is provided in Tauxe et al.\
+        (2016) (listed above in Publications).
+    \item Proficient in Bash and other Unix shell/command line interface
+        (CLI) tools
+    \item Experience with MATLAB; limited experience with C and
+        C\texttt{++} from miscellaneous projects (no formal training)
+    \item Some experience with frontend web development (CSS, Javascript) and
+        static site generators (Jekyll, GitHub Pages)
+\end{itemize}
+% \vspace{-10pt}
+\pagebreak[4]
+\subsection{Markup Languages}
+\vspace{-10pt}
+\begin{multicols}{3}
+\begin{itemize}%[itemsep=-3pt]
+    \item {\large\fontfamily{cmr}\selectfont\LaTeX}\\
+        \raggedright\normalsize
+        % \subitem Extensive experience 
+    \item Markdown
+    \item HTML
+\end{itemize}
+\end{multicols}
+\vspace{-15pt}
 
-    \item \textbf{Programming and Markup Languages:} Proficient in Python,
-        {\fontfamily{cmr}\selectfont\LaTeX}, Jupyter notebooks, HTML; some
-        experience with  Matlab, Javascript, C, C{++}, frontend web development
-        (Jekyll and GitHub pages)
-
-    \vspace{6pt}
-
-    \item \textbf{Industry Software Skills:} GIS, git version control software,
-        GitHub, Adobe Illustrator, Adobe Photoshop, MS Office products
-
-    \vspace{6pt}
-
-    \item \textbf{Field Skills:} Geologic mapping, rock core drilling/orienting,
-        structural analysis
-
+\subsection{Industry Software Skills}
+\underline{Geographic Information Systems (GIS)}
+\vspace{-5pt}
+\begin{multicols}{2}
+\begin{itemize}[itemsep=-3pt]
+    % general recommendations advise against including such logos as below...
+    %
+    % \item {\begin{minipage}[t]{\linewidth} \raggedright
+    %             \adjustbox{valign=t}{%
+    %             \includegraphics[width=.17\textwidth]{media/qgis-logo.png}}
+    %     \end{minipage}} 
+    %     \raggedright Proficient and highly experienced. I have
+    %     used QGIS over many years to integrate field observations
+    %     and structural measurements in creating geologic maps, investigate
+    %     geographic trends in laboratory data, and develop spatial and temporal
+    %     models consistent with the data.\columnbreak
+    % \item {\begin{minipage}[t]{\linewidth} \raggedright
+    %             \adjustbox{valign=t}{%
+    %             \includegraphics[width=.25\textwidth]{media/arcgis_horizontal_logo.png}}
+    %     \end{minipage}} \raggedright While ultimately more familiar with the QGIS
+    %     interface, I do also have ample experience with ArcGIS in generating
+    %     custom maps and referencing high-resolution imagery. % \item ArcGIS
+    \item \textbf{QGIS}\\
+        \raggedright Proficient and highly experienced. I have
+        used QGIS over many years to integrate field observations
+        and structural measurements in creating geologic maps, investigate
+        geographic trends in laboratory data, and develop spatial and temporal
+        (paleo)geographic models.
+    \columnbreak
+    \item \textbf{ArcGIS}\\
+        \raggedright While ultimately more familiar with the QGIS
+        interface, I do also have ample experience with ArcGIS in generating
+        custom maps and referencing high-resolution imagery. % \item ArcGIS
+\end{itemize}
+\end{multicols}
+\vspace{-15pt}
+\begin{itemize}[itemsep=-3pt]
+    \item Extensive experience with Adobe Creative Suite software (Illustrator,
+        Photoshop, Lightroom)
+    \item Fluent in \texttt{git} version control software and
+        related online platforms such as GitHub
+    % \item Fluent in \raisebox{-2pt}{\faGit{}} version control software and
+    %     related web-based hosting services such as GitHub
 \end{itemize}
 
-%\section{Interests and extra-curricular activity}
-%
-%\vspace{6pt}
-%
-%\begin{itemize}
-%
-%\item{I was a "fresher representative" in my 2nd and 3rd years of university, this required me to guide, look after, and ensure that a particular flat of first years have a good time in their first week, and feel consoled in what for most of them is there first time living away from home. We were responsible for the safety and wellbeing of the group of first years during the first week, and during this time I made good friends with all of them.}
-%
-%\vspace{6pt}
-%
-%\item{I am a member of a number of university societies. I was also the vice president and co-founder of the flash mob society. My roles in this included recruiting members, in which during "fresher's fair" we enlisted over 200 new members. This was regarded as very successful, considering other societies averaged around 50. I also appeared in an interview on the university television station, set up a society bank account, and helped organise the events. One of these events was featured in the local newspaper.}
-%
-%\vspace{6pt}
-%
-%\item{I am also an avid hiker, having completed the national 3 peaks challenge last summer. Other interest include guitar, which I am self-taught, and home brewing.}
-%
-%\end{itemize}
-%
-%\section{References}
-%
-%\vspace{6pt}
-% 
-%\begin{itemize}
-%
-%\item{Up to 4 references available on request}
-%
-%\end{itemize}
+\subsection{Field Skills}
 
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+\begin{itemize}
+    \item Geologic mapping
+    \item Rock core drilling/orienting
+    \item Geological structural analysis
+    \item Field work logistics and planning
+\end{itemize}
 
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\subsection{Laboratory Skills}
 
-%-----       letter       ---------------------------------------------------------
+% \begin{itemize}
+%     \item Geologic mapping
+%     \item Rock core drilling/orienting
+%     \item Geological structural analysis
+%     \item Field work logistics and planning
+% \end{itemize}
 
 \end{document}
 
